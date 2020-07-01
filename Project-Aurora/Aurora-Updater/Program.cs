@@ -42,6 +42,8 @@ namespace Aurora_Updater
         [STAThread]
         static void Main(string[] args)
         {
+            Application.EnableVisualStyles();
+
             foreach (var arg in args)
             {
                 if (String.IsNullOrWhiteSpace(arg))
